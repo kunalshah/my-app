@@ -1,38 +1,34 @@
-# create-svelte
+# Sample repository 
+This repository was created using svelte 5 bootstrapper `npm create svelte@latest my-app`
+And then all the dependencies / dev dependencies were updated to the latest versions.
 
-Everything you need to build a Svelte project, powered by [`create-svelte`](https://github.com/sveltejs/kit/tree/main/packages/create-svelte).
-
-## Creating a project
-
-If you're seeing this, you've probably already done this step. Congrats!
+Here are the current latest version of dependencies:
 
 ```bash
-# create a new project in the current directory
-npm create svelte@latest
-
-# create a new project in my-app
-npm create svelte@latest my-app
+svelte 5 (5.0.0-next.190)
+sveltekit (2.5.18)
+eslint (9.7.0)
+prettier (3.3.3)
+eslint-plugin-svelte (2.42.0)
 ```
 
-## Developing
+And then a simple new component `MyComponent1` was created and used in `src/routes/+page.svelte`
 
-Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
+
+## Run in development mode
 
 ```bash
-npm run dev
-
-# or start the server and open the app in a new browser tab
 npm run dev -- --open
 ```
 
-## Building
-
-To create a production version of your app:
+## Format source code with prettier
 
 ```bash
-npm run build
+npm run format
 ```
 
-You can preview the production build with `npm run preview`.
+## Lint source code with eslint
 
-> To deploy your app, you may need to install an [adapter](https://kit.svelte.dev/docs/adapters) for your target environment.
+```bash
+npm run lint
+```
